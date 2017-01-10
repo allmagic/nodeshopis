@@ -29,7 +29,7 @@
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js",
-    "dev": "forever stop app.js && forever -w start app.js && forever logs -f app.js"
+    "dev": "forever stop app.js ; forever -w start app.js && forever logs -f app.js"
   },
   "main": "app.js",
   "repository": {
