@@ -11,8 +11,6 @@ module.exports = {
     //
     let data = {
       currentDate: sampleDate,
-      nhanVien: 'Khanh Admin',
-      testVariable: 'this is test value'
     };
 
     return res.view('aboutUs', data)

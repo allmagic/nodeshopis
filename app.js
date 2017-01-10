@@ -55,10 +55,5 @@ try {
   }
 }
 
-const user = ({ name }) => {
-  return name;
-};
-
-console.log('user', user({ name: 'tam' }));
 // Start server
 sails.lift(rc('sails'));

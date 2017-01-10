@@ -21,5 +21,7 @@ module.exports = {
   //   connection: 'someMongodbServer'
   // }
   port: process.env.PORT || 3000,
-
+  models: {
+    migrate: 'alter'
+  }
 };
