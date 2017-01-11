@@ -18,6 +18,7 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
   'styles/**/*.css',
+  'font-awesome/css/font-awesome.min.css',
   // 'styles/importer.less',
 ];
 
@@ -26,6 +27,7 @@ var cssFilesToInject = [
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
   // Bootstrap here
+  'js/plugin/jquery.min.js',
   'bootstrap-less/js/*.js',
   // Load sails.io before everything else
   'js/dependencies/sails.io.js',
