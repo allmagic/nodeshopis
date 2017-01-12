@@ -10,7 +10,8 @@ table {
     height:50px;
   }
   th,td {
-    line-height:34px !important;
+    line-height: 34px !important;
+    text-align:center;
   }
 }
 
@@ -21,9 +22,7 @@ table {
   background:#ebeef0;
   width: 100%;
   padding:0;
-  .fa {
-    margin-right:10px;
-  }
+
   .sidenav {
     background: @acpmenuBg;
     min-height:100%;
@@ -39,7 +38,9 @@ table {
       background: @acpmenuBg;
       color:#d2dae1;
       border:none;
+      border-radius:0;
       .fa {
+        margin-right:10px;
         color:#798c9c;
         line-height: 22px;
       }
@@ -93,6 +94,14 @@ table {
     border-radius:0;
     background-image: url('../images/admin-dashboard.png');
     background-size: cover;
+  }
+  #product-page {
+    table img {
+      max-width: 45px;
+    }
+    th,td {
+      line-height:50px !important;
+    }
   }
 }
 @media (max-width: 768px) {
