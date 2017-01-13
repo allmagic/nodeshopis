@@ -15,7 +15,9 @@ module.exports = {
   },
 
   product: (req,res) => {
-    res.view('acp/product')
+    let params = req.allParams();
+    if (params.p == 'sample') return res.view('acp/product');
+    else return res.view('acp/product-option');
   },
 
   seller: (req,res) => {
