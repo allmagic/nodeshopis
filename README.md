@@ -2,6 +2,7 @@
 
 a [Sails](http://sailsjs.org) application
 
+
 ## Create user - POST
 ```
   {
