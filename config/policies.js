@@ -51,21 +51,22 @@ module.exports.policies = {
 
   '*': [
     // 'basicAuth',
-    'passport',
-    'sessionAuth',
-    'ModelPolicy',
-    'AuditPolicy',
-    'OwnerPolicy',
-    'PermissionPolicy',
-    'RolePolicy',
-    'CriteriaPolicy'
+    // 'passport',
+    // 'sessionAuth',
+    // 'ModelPolicy',
+    // 'AuditPolicy',
+    // 'OwnerPolicy',
+    // 'PermissionPolicy',
+    // 'RolePolicy',
+    // 'CriteriaPolicy'
   ],
 
-  AuthController: {
-    '*': [ 'passport' ]
-  },
+  // AuthController: {
+  //   '*': [ 'passport' ]
+  // },
 
   'AboutUsController': {
     '*': true,
   },
+  'OwnerController': ['OwnerPolicy'],
 };
